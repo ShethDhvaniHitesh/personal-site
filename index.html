@@ -3,56 +3,100 @@
   <head>
     <meta charset="utf-8">
     <title>Dhvani Sheth</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico">
+    <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Sacramento" rel="stylesheet">
+    <!--CSS Stylesheets-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <!--jQuery and JavaScript CDN-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--Font Awesome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   </head>
+
   <body>
-    <div class="top-container">
-      <img class="top-cloud" src="cloud.png" alt="">
-      <h1>I'm Dhvani</h1>
-      <h2>a programmer</h2>
-      <img src="cloud.png" class="bottom-cloud">
-    </div>
 
-    <div class="middle-container">
-      <div class="profile">
-        <img  class="profile-pic" src="dhvani.jpg" alt="">
-        <h2>Hello.</h2>
-        <p class="intro">I am a student at Chitkara University persuing my graduation. I 💗 eating street food</p>
+    <section id="top">
+      <!--Navigation bar-->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <img src="wings.ico" class="navbar-brand" style="height: 35px; width: 35px;">
+        <button type="button" name="button" target="#top-nav" class="navbar-toggler">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="top-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#profileSection" class="nav-link">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skillsSection" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contactSection" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="#moreAboutMe" class="nav-link">About Me</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="top-container">
+        <img class="top-cloud" src="cloud.png" alt="">
+        <h1 class="first-heading">I'm Dhvani</h1>
+        <h2 class="second-heading">a programmer</h2>
+        <img src="cloud.png" class="bottom-cloud">
       </div>
+    </section>
 
-      <hr>
+    <section id="profileSection">
+      <div class="profile">
+        <img  class="profile-pic" src="dhvani.jpg">
+        <h2 class="second-heading">Hello.</h2>
+        <p class="intro">I am a student at Chitkara University persuing my graduation. I 💗 music and dance. I am an enthusiastic and hard working devoted hirl who is passionate about her work.</p>
+      </div>
+    </section>
 
+    <hr>
+
+    <section id="skillsSection">
       <div class="skills">
-        <h2>My Skills.</h2>
+        <h2 class="second-heading">My Skills.</h2>
         <div class="skill-row">
           <img class="comp-img" src="computer.png" alt="">
           <h3>Programing</h3>
-          <p>A programmer with good command in C, C++ and JAVA.</p>
+          <p class="intro">A programmer with good command in C, C++ and JAVA.</p>
         </div>
         <div class="skill-row">
           <img src="sing.png" class="sing-img">
           <h3>Singing</h3>
-          <p>The passion that I possess and enjoy the ,ost is singing. I had won various group competitions during my school days.</p>
+          <p class="intro">The passion that I possess and enjoy the ,ost is singing. I had won various group competitions during my school days.</p>
         </div>
       </div>
+    </section>
 
-      <hr>
+    <hr>
 
+    <section id="contactSection">
       <div class="contact-me">
-        <h2>Get In Touch</h2>
+        <h2 class="second-heading">Get In Touch</h2>
         <h3>If you ish to contact me...</h3>
-        <p>Any queiries and suggestions are always welcomed. You may contact through all the sites mentioned below or by clicking below.</p>
-        <a class="btn" href="contact.html">Contact Me</a>
+        <p class="intro">Any queiries and suggestions are always welcomed. You may contact through all the sites mentioned below or by clicking below.</p>
+        <a class="btn btn-info btn-lg btn-outline-dark" href="mailto:dhvani2510@email.com">Contact Me</a>
       </div>
-    </div>
+    </section>
 
-    <div class="bottom-container">
-      <a href="https://www.linkedin.com" class="footer-link">Linkedin</a>
-      <a href="https://www.twitter.com" class="footer-link">Twitter</a>
-      <a href="https://www.guthub.com" class="footer-link">Github</a>
-      <p class="copyright">© 2019 Dhvani Sheth</p>
-    </div>
+    <section id="moreAboutMe">
+      <div class="bottom-containe">
+        <a href="https://www.linkedin.com" class="footer-link">Linkedin</a>
+        <a href="https://www.twitter.com" class="footer-link">Twitter</a>
+        <a href="https://www.guthub.com" class="footer-link">Github</a>
+        <p class="copyright">© 2019 Dhvani Sheth</p>
+      </div>
+    </section>
+
   </body>
 </html>
